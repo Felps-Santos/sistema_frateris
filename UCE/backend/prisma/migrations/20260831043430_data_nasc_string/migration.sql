@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Pessoa" ALTER COLUMN "dataNasc" SET DATA TYPE TEXT;

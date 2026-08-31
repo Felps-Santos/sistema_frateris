@@ -1,0 +1,17 @@
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/generated/prisma"
+  moduleFormat = "cjs"
+}
+
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Pessoa {
+  id    Int  @id @default(autoincrement())
+  nome  String
+  cpf   String
+  dataNasc  String
+}
